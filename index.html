@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Geolocation</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|VT323" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <button onclick="getLocation()">Get Coords</button>
+        <br>
+        <br>
+        <h1 id="coords"></h1>
+    </div>
+    <br>
+    <br>
+
+    <!--
+    <script>
+        var x = document.getElementById('coords');
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                x.innerHTML = "Geolocation is not supported";
+            }
+
+            function showPosition(position) {
+                //console.log(position.coords.latitude);
+                x.innerHTML = "Latitude " + position.coords.latitude + "<br>Longitude " + position.coords.longitude;
+            }
+        }
+    </script>
+-->
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
